@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>calculator</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="box1 mt-5 text-center bg-light" >
+
+                    <input type="text" id="first">
+                    <input type="text" id="two">
+                    <button id="btn1" onclick="sum(Number(first.value), Number(two.value))">+</button>
+                    <button id="btn-" onclick="minus(Number(first.value), Number(two.value))">-</button>
+                    <button id="btn*" onclick="zabdar(Number(first.value), Number(two.value))">*</button>
+                    <button id="btn/" onclick="taghsim(Number(first.value), Number(two.value))">/</button>
+
+                </div>    
+                
+                <div class="box2 mt-4 text-center bg-light">
+                    <button id="btn=" onclick="final.value = c">=</button>
+                    <input type="text" id="final">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <script src="app.js"></script>
+</body>
+</html>
